@@ -1,6 +1,13 @@
 {
   "participant_id": {
-    "Description": "OpenNeuro ID of the subject."
+    "Description": "OpenNeuro ID of the subject.",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": "Participant ID"
+      },
+      "VariableType": "Identifier"
+    }
   },
   "release_1": {
     "Description": "Presence of participant data in release 1 of the dataset.",
@@ -26,6 +33,26 @@
       "male": "Male",
       "female": "Female",
       "n/a": "No response, meaning there was no response from participant though a response was possible. Question may have been skipped over by participant."
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": "Sex"
+      },
+      "VariableType": "Categorical",
+      "Levels": {
+        "female": {
+          "TermURL": "snomed:248152002",
+          "Label": "Female"
+        },
+        "male": {
+          "TermURL": "snomed:248153007",
+          "Label": "Male"
+        }
+      },
+      "MissingValues": [
+        "n/a"
+      ]
     }
   },
   "handedness": {
@@ -77,6 +104,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:273265007",
+        "Label": "Alcohol use disorders identification test"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   },
   "bai": {
@@ -84,6 +131,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:273307004",
+        "Label": "Beck anxiety standardized rating scale"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   },
   "bdi": {
@@ -91,6 +158,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:273306008",
+        "Label": "Beck depression inventory"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   },
   "big_five_personality": {
@@ -161,6 +248,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:704501007",
+        "Label": "Generalized Anxiety Disorder 7 item scale"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   },
   "health_history_checklist_year_1": {
@@ -259,6 +366,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:758711000000105",
+        "Label": "PHQ-9 - Patient health questionnaire 9"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   },
   "satisfaction": {
@@ -301,6 +428,26 @@
     "Levels": {
       "0": "Not Present",
       "1": "Present"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:719091001",
+        "Label": "WHODAS (World Health Organization Disability Assessment Schedule) 2.0"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
     }
   }
 }
